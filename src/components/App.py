@@ -17,7 +17,8 @@ class App(tk.Frame):
                          text = 'C',
                          bg = '#2D2D2F',
                          fg = '#FC6B64',
-                         font = ('Arial', 20, 'bold')
+                         font = ('Arial', 20, 'bold'),
+                         command = pantalla.limpiar
                          )
     botonLimpiar.place(x = 0, y = 100, width = 100, height = 100)
     
@@ -26,7 +27,8 @@ class App(tk.Frame):
                          value = '/',
                          bg = '#2D2D2F',
                          fg = '#63FE7E',
-                         font = ('Arial', 20, 'bold')
+                         font = ('Arial', 20, 'bold'),
+                         command = lambda: pantalla.pulsarTecla(tecla = botonDividir.value)
                          )
     botonDividir.place(x = 100, y = 100, width = 100, height = 100)
     
@@ -35,7 +37,8 @@ class App(tk.Frame):
                              value = '*',
                              bg = '#2D2D2F',
                              fg = '#63FE7E',
-                             font = ('Arial', 20, 'bold')
+                             font = ('Arial', 20, 'bold'),
+                             command = lambda: pantalla.pulsarTecla(tecla =botonMultiplicar .value)
                              )
     botonMultiplicar.place(x = 200, y = 100, width = 100, height = 100)
     
@@ -43,7 +46,8 @@ class App(tk.Frame):
                            text = '←',
                            bg = '#2D2D2F',
                            fg = '#63FE7E',
-                           font = ('Arial', 20, 'bold')
+                           font = ('Arial', 20, 'bold'),
+                           command = pantalla.retroceso
                            )
     botonRetroceso.place(x = 300, y = 100, width = 100, height = 100)
     
@@ -52,7 +56,8 @@ class App(tk.Frame):
                    value = '7',
                    bg = '#171719',
                    fg = '#EAEAEA',
-                   font = ('Arial', 20, 'bold')
+                   font = ('Arial', 20, 'bold'),
+                   command = lambda: pantalla.pulsarTecla(tecla = boton7.value)
                    )
     boton7.place(x = 0, y = 200, width = 100, height = 100)
     
@@ -61,7 +66,8 @@ class App(tk.Frame):
                    value = '8',
                    bg = '#171719',
                    fg = '#EAEAEA',
-                   font = ('Arial', 20, 'bold')
+                   font = ('Arial', 20, 'bold'),
+                   command = lambda: pantalla.pulsarTecla(tecla = boton8.value)
                    )
     boton8.place(x = 100, y = 200, width = 100, height = 100)
     
@@ -70,7 +76,8 @@ class App(tk.Frame):
                    value = '9',
                    bg = '#171719',
                    fg = '#EAEAEA',
-                   font = ('Arial', 20, 'bold')
+                   font = ('Arial', 20, 'bold'),
+                   command = lambda: pantalla.pulsarTecla(tecla = boton9.value)
                    )
     boton9.place(x = 200, y = 200, width = 100, height = 100)
     
@@ -79,7 +86,8 @@ class App(tk.Frame):
                         value = '-',
                         bg = '#2D2D2F',
                         fg = '#63FE7E',
-                        font = ('Arial', 20, 'bold')
+                        font = ('Arial', 20, 'bold'),
+                        command = lambda: pantalla.pulsarTecla(tecla = botonRestar.value)
                         )
     botonRestar.place(x = 300, y = 200, width = 100, height = 100)
     
@@ -88,7 +96,8 @@ class App(tk.Frame):
                    value = '4',
                    bg = '#171719',
                    fg = '#EAEAEA',
-                   font = ('Arial', 20, 'bold')
+                   font = ('Arial', 20, 'bold'),
+                   command = lambda: pantalla.pulsarTecla(tecla = boton4.value)
                    )
     boton4.place(x = 0, y = 300, width = 100, height = 100)
     
@@ -97,7 +106,8 @@ class App(tk.Frame):
                    value = '5',
                    bg = '#171719',
                    fg = '#EAEAEA',
-                   font = ('Arial', 20, 'bold')
+                   font = ('Arial', 20, 'bold'),
+                   command = lambda: pantalla.pulsarTecla(tecla = boton5.value)
                    )
     boton5.place(x = 100, y = 300, width = 100, height = 100)
     
@@ -106,7 +116,8 @@ class App(tk.Frame):
                    value = '6',
                    bg = '#171719',
                    fg = '#EAEAEA',
-                   font = ('Arial', 20, 'bold')
+                   font = ('Arial', 20, 'bold'),
+                   command = lambda: pantalla.pulsarTecla(tecla = boton6.value)
                    )
     boton6.place(x = 200, y = 300, width = 100, height = 100)
     
@@ -115,7 +126,8 @@ class App(tk.Frame):
                        value = '+',
                        bg = '#2D2D2F',
                        fg = '#63FE7E',
-                       font = ('Arial', 20, 'bold')
+                       font = ('Arial', 20, 'bold'),
+                       command = lambda: pantalla.pulsarTecla(tecla = botonSumar.value)
                        )
     botonSumar.place(x = 300, y = 300, width = 100, height = 100)
     
@@ -124,7 +136,8 @@ class App(tk.Frame):
                    value = '1',
                    bg = '#171719',
                    fg = '#EAEAEA',
-                   font = ('Arial', 20, 'bold')
+                   font = ('Arial', 20, 'bold'),
+                   command = lambda: pantalla.pulsarTecla(tecla = boton1.value)
                    )
     boton1.place(x = 0, y = 400, width = 100, height = 100)
     
@@ -133,7 +146,8 @@ class App(tk.Frame):
                    value = '2',
                    bg = '#171719',
                    fg = '#EAEAEA',
-                   font = ('Arial', 20, 'bold')
+                   font = ('Arial', 20, 'bold'),
+                   command = lambda: pantalla.pulsarTecla(tecla = boton2.value)
                    )
     boton2.place(x = 100, y = 400, width = 100, height = 100)
     
@@ -142,7 +156,8 @@ class App(tk.Frame):
                    value = '3',
                    bg = '#171719',
                    fg = '#EAEAEA',
-                   font = ('Arial', 20, 'bold')
+                   font = ('Arial', 20, 'bold'),
+                   command = lambda: pantalla.pulsarTecla(tecla = boton3.value)
                    )
     boton3.place(x = 200, y = 400, width = 100, height = 100)
     
@@ -150,7 +165,8 @@ class App(tk.Frame):
                        text = '=',
                        bg = '#318607',
                        fg = '#FBFAFF',
-                       font = ('Arial', 20, 'bold')
+                       font = ('Arial', 20, 'bold'),
+                       command = pantalla.evaluarExpresion
                        )
     botonIgual.place(x = 300, y = 400, width = 100, height = 200)
     
@@ -159,7 +175,8 @@ class App(tk.Frame):
                          value = '.',
                          bg = '#2D2D2F',
                          fg = '#63FE7E',
-                         font = ('Arial', 20, 'bold')
+                         font = ('Arial', 20, 'bold'),
+                         command = lambda: pantalla.pulsarTecla(tecla = botonDecimal.value)
                          )
     botonDecimal.place(x = 0, y = 500, width = 100, height = 100)
     
@@ -168,7 +185,8 @@ class App(tk.Frame):
                    value = '0',
                    bg = '#171719',
                    fg = '#EAEAEA',
-                   font = ('Arial', 20, 'bold')
+                   font = ('Arial', 20, 'bold'),
+                   command = lambda: pantalla.pulsarTecla(tecla = boton0.value)
                    )
     boton0.place(x = 100, y = 500, width = 100, height = 100)
     
@@ -177,6 +195,7 @@ class App(tk.Frame):
                     value = '00',
                     bg = '#171719',
                     fg = '#EAEAEA',
-                    font = ('Arial', 20, 'bold')
+                    font = ('Arial', 20, 'bold'),
+                    command = lambda: pantalla.pulsarTecla(tecla = boton00.value)
                     )
     boton00.place(x = 200, y = 500, width = 100, height = 100)
